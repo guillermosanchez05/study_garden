@@ -20,6 +20,11 @@ class Timer:
         print("Ended with: ", self.end_time - time.monotonic(), " seconds left.")
 
     def run(self):
+        """Does the main countdown logic:
+        - Gets the user input from 'input_time()' function.
+        - Sets the values of Timer attributes by calling 'start()' function.
+        - Runs the main countdown loop.
+        """
         self.duration = input_time()
         self.start()
         try:
